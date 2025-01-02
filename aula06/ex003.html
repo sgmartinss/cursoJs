@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - ex003</title>
+    <style>
+        body {
+            background-color: #6060b8;
+            color: red;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: orange;
+        }
+
+        /* Comentarios em CSS */
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Ja me livrei da maldição!</p>
+    <!-- comentarios em HTML -->
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite um numero: ")) // Recebe um String
+        var n2 = Number(window.prompt("Digite outro numero: ")) // Usar somente number tambem funciona e, serve pra int e FLoat
+        //Number.parseFloat
+        var soma = n1 + n2
+        // window.alert("A soma dos valores é: " + String(soma))
+        window.alert(`A soma de ${n1} e ${n2} é: ${soma}`) // Template String
+
+    </script>
+</body>
+</html>
