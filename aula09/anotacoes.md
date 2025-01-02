@@ -12,12 +12,12 @@ location    document    history
                                 strong
 
 
-(HTML é parent de Body e Chield de Windows)
+(HTML é parent de Body e Child de Windows)
 
 ![alt text](image.png)
 
 ===
-5 Metodos de acesso 
+5 principais Metodos de acesso a elementos DOM dentro do JS
 - Por Marca
 getElementsByTagName
 - por ID
