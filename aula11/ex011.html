@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NACIONALIDADE</title>
+</head>
+
+<body>
+  <h1>Nacionalidade</h1>
+  <P>Em qual país voce mora?</P>
+  <input type="text" name="txtnac" id="txtnac">
+  <input type="button" name="verificar" id="verificar" onclick="verificar()" value="verificar">
+
+  <div id="res"></div>
+
+  <script>
+    function verificar() {
+
+      var txtnac = window.document.getElementById("txtnac");
+
+      var res = document.getElementById('res')
+      var pais = txtnac.value
+
+      res.innerHTML = `<p>Morando no ${pais},</p>`
+      if (pais.toUpperCase() == "BRASIL") {
+        res.innerHTML += `você é Brasileiro!`
+      } else {
+        res.innerHTML += `você é estrangeiro!`
+      }
+    }
+  </script>
+</body>
+
+</html>
